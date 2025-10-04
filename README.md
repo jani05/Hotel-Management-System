@@ -1,1 +1,1 @@
-# Hotel-Reservation-System-Project (Needs Improvements)
+# Hotel-Reservation-System-Project (Unfinished and needs improvements)
