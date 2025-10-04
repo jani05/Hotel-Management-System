@@ -1,0 +1,514 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f8f8;
+    }
+
+    /* Header Bar */
+    .top-bar {
+      background-color: #018000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 20px;
+      font-size: 14px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .cvsu-logo {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .university-info strong {
+      display: block;
+    }
+
+    .top-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .icon {
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: white;
+      border-bottom: 1px solid #ccc;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .villa-logo {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .brand-text h1 {
+      color: #018000;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .brand-text small {
+      color: #666;
+      font-size: 12px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #018000;
+      font-weight: bold;
+      font-size: 16px;
+      position: relative;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown .arrow {
+      font-size: 12px;
+      margin-left: 3px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+      border: 1px solid #ddd;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px 15px;
+      color: #018000;
+      text-decoration: none;
+      font-weight: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .book-btn {
+      padding: 10px 20px;
+      border: 2px solid #018000;
+      background-color: white;
+      color: #018000;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .book-btn:hover {
+      background-color: #018000;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .book-btn {
+        margin-top: 10px;
+      }
+    }
+
+     .header-img {
+      background: url('images/samplebedroom.png') center/cover no-repeat;
+      height: 300px;
+      position: relative;
+    }
+
+    .hotel-info {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background-color: rgba(255,255,255,0.9);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+    }
+
+    .hotel-info h2 {
+      margin: 0 0 10px 0;
+    }
+
+    .info-line {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+      font-size: 15px;
+    }
+
+    .info-line i {
+      margin-right: 10px;
+      color: #444;
+    }
+
+    .booking-panel {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      justify-content: space-between;
+      background: #fff;
+    }
+
+    .booking-box {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .booking-box label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      color: green;
+    }
+
+    .booking-box input,
+    .booking-box select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .cart-box {
+      flex: 1;
+      min-width: 200px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      margin: 10px 0;
+      border-radius: 5px;
+      background: #fff;
+    }
+
+    h3 {
+      margin: 30px 20px 10px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    i {
+      font-style: normal;
+    }
+
+    /* Select a Room */
+    /* Container */
+.container {
+  max-width: 1100px;
+  margin-left: 10px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* Top Controls */
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+select, .filter-btn {
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.filter-btn {
+  background-color: #f1f1f1;
+}
+
+/* Rate Box */
+.rate-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.rate-box h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.rate-box .member-rate {
+  color: #b33636;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rate-box a {
+  color: #0073aa;
+  text-decoration: none;
+}
+
+/* Room Card */
+.room-card {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.room-img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.room-info {
+  flex-grow: 1;
+}
+
+.room-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0073aa;
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.room-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.room-info ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+/* Price and Actions */
+.room-price {
+  text-align: right;
+  min-width: 160px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.per-night {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.btn.green {
+  display: block;
+  background-color: #0a8157;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  margin: 6px 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.view-more {
+  text-align: right;
+}
+
+.view-more a {
+  color: #0073aa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Book Now Styles */
+ .container_booking {
+      max-width: 550px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .btn {
+      background-color: #0b3d2e;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #096649;
+    }
+
+    .confirmation {
+      margin-top: 25px;
+      background-color: #e6f8ec;
+      padding: 20px;
+      border-left: 6px solid #34a56f;
+      border-radius: 6px;
+    }
+
+    .readonly-field {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  color: #333;
+  cursor: not-allowed;
+}
+
+/*Modal Styles*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+}
+
+.modal-content input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.sign-in-btn {
+  width: 100%;
+  background-color: #009879;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.sign-in-btn:hover {
+  background-color: #007f6b;
+}
